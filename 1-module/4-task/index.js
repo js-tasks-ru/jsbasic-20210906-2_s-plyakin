@@ -1,7 +1,8 @@
+const SPAM_STRING_1 = '1xbet';
+const SPAM_STRING_2 = 'xxx';
 function checkSpam(str) {
-    let a = '1xBet'.toLowerCase();
-    let b = 'XXX'.toLowerCase();
+    SPAM_STRING_1.toLowerCase();
+    SPAM_STRING_2.toLowerCase();
     let str2 = str.toLowerCase();
-    if (str2.includes(a) || str2.includes(b)) return true;
-    return false;
+    return str2.includes(SPAM_STRING_1) || str2.includes(SPAM_STRING_2);
 }
